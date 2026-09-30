@@ -9,11 +9,7 @@ Dify 工作流与 Chatflow 搭建技能(Agent Skill)。面向不熟悉 Dify 的�
 
 ## 安装
 
-```bash
-git clone https://github.com/guxiao7538/dify-nodes.git ~/.claude/skills/dify-nodes
-```
-
-Claude Code / ZCode 等支持 skills 的环境会自动发现;其他环境把目录链接到对应技能路径即可。
+下载本仓库,把其中的 `dify-nodes/` 目录放入你所用 Agent 的技能目录——Claude Code、Codex、Qoder、CodeBuddy、WorkBuddy 等支持技能机制的 Agent 均可——然后让该 Agent 读取其中的 `SKILL.md` 完成安装;各 Agent 的技能目录位置以自身文档为准。
 
 ## 使用
 
