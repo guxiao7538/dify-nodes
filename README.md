@@ -50,21 +50,21 @@
 告别“黑盒直接塞 DSL 导致租户配置不对报错”。`dify-nodes` 采用严格的两阶段分层交付设计：
 
 ```mermaid
-graph TD
-    A[💬 自然语言需求与业务约束] --> B{dify-nodes 架构思考}
+flowchart TD
+    A["💬 自然语言需求与业务约束"] --> B{"dify-nodes 架构思考"}
     
-    subgraph Tier1 [第一阶段：面向人的搭建方案文档（默认交付）]
-        B --> C[📄 规范化方案文档 Markdown]
-        C --> C1[• 文字层级拓扑流程图]
-        C --> C2[• 逐节点字段填写说明]
-        C --> C3[• 知识库 RAG 与模型配置建议]
+    subgraph Tier1 ["第一阶段：面向人的搭建方案文档（默认交付）"]
+        B --> C["📄 规范化方案文档 Markdown"]
+        C --> C1["• 文字层级拓扑流程图"]
+        C --> C2["• 逐节点字段填写说明"]
+        C --> C3["• 知识库 RAG 与模型配置建议"]
     end
     
-    subgraph Tier2 [第二阶段：面向机器的 DSL 文件（按需转换）]
-        C -->|确认方案无误后导出| D[⚙️ 0.6.0 规范 YAML DSL]
-        D --> E[🛡️ validate_dsl.py 静态校验器]
-        E -->|校验通过| F[🎉 Dify 画布直接导入]
-        E -->|发现拓扑/代码瑕疵| B
+    subgraph Tier2 ["第二阶段：面向机器的 DSL 文件（按需转换）"]
+        C -->|确认方案无误后导出| D["⚙️ 0.6.0 规范 YAML DSL"]
+        D --> E["🛡️ validate_dsl.py 静态校验器"]
+        E -->|校验通过| F["🎉 Dify 画布直接导入"]
+        E -->|发现拓扑或代码瑕疵| B
     end
 ```
 
