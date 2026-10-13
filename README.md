@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Agent_Ready-Claude_Code_%7C_ZCode_%7C_Cursor-8A2BE2?style=flat-square" alt="Agent Ready" />
+  <img src="https://img.shields.io/badge/Agent-Universal_Compatible-8A2BE2?style=flat-square" alt="Universal Agent" />
   <img src="https://img.shields.io/badge/Dify_DSL-v0.6.0-155EEF?style=flat-square" alt="Dify DSL" />
   <img src="https://img.shields.io/badge/Supported_Nodes-27_Types-10B981?style=flat-square" alt="Supported Nodes" />
   <img src="https://img.shields.io/badge/Validator-Python_AST-F59E0B?style=flat-square" alt="AST Validator" />
@@ -97,7 +97,7 @@ flowchart TD
 
 ### 方式一：AI 助手一键配置（推荐）
 
-直接复制以下指令发给你的日常 Agent（Claude Code、ZCode、Codex、Cursor 等）：
+直接复制以下指令发给你的 AI 助手（支持 Workbuddy、DeepseekHarness、Cursor、GitHub Copilot、Claude Code 等任意平台）：
 
 ```text
 请帮我安装这个 Agent Skill: https://github.com/guxiao7538/dify-nodes
